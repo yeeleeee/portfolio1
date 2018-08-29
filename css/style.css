@@ -1,5 +1,9 @@
 /*01.global style*/
 @import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Lora:300,400,400i');
+@import url('https://rsms.me/inter/inter-ui.css');
+
+
+
 body{
     font-family: "open sans", sans-serif;
     line-height: 1.6;
