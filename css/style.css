@@ -1,5 +1,7 @@
 /*01.global style*/
 @import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Lora:300,400,400i');
+
+/*"Inter UI", 1~400, 500, 6~700, 800~*/
 @import url('https://rsms.me/inter/inter-ui.css');
 
 
@@ -52,8 +54,8 @@ z-index 99*************************/
 nav{
     position: sticky;
     top: 0;
-    border-bottom: .1px #ff1111 solid;
-    background: #ffc0cb20;
+/*    border-bottom: .1px #ff1111 solid;*/
+/*    background: #ffc0cb20;*/
     z-index: 99;}
 nav ul{
     position: relative;
@@ -63,15 +65,19 @@ nav ul li{
     display: inline-block;
 }
 nav:hover{
-    background: #fff0f2;
-    transition: background-color 600ms ease;
+    background-color: #f6f7f8a0;
+    transition:  300ms ease;
+}
+nav:hover a{
+    color: #ff1111;
 }
 nav a:hover{
-    color: black;
+    color: #2b2b2b;
 }
 .nav{
-    color: #ff004c;
-    font-family: "Abel",sans-serif;
+    color: #ff111120;
+    font-family: "Inter UI",sans-serif;
+    font-weight: 900;
     font-size: 1.2rem;
     text-decoration: none;
     margin-right: 1em;
@@ -79,23 +85,27 @@ nav a:hover{
 
 /*typography***********************/
 .h1{
-    font-family: "Abel";
-    font-size: 2.2rem;
+    font-family: "Inter UI";
+    font-size: 4rem;
     font-weight: 600;
-    color: #ff1111;
+    color: #2b2b2bf0;
+
 }
 .h2{
+    font-family: "Inter UI";
     font-size: 1.2rem;
 /*    font-weight: 600;*/
 }
 .h3{
-    font-family:"Abel";
+    font-family:"Inter UI";
+    font-weight: 700;
     font-size: 1.4rem;
 }
 .h4{
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
-    font-weight: 600;   
+    font-weight: 600;
+    color: #ff1111;
 }
 .quote{
     padding: 5vw;
@@ -103,15 +113,19 @@ nav a:hover{
     font-size: 1.2rem;
     
     background-color:#ffc0cb26;
-
 }
 .p{
-    font-family: 'SpaceGrotesk-Bold', sans-serif;
+    font-family: 'Inter UI', sans-serif;
     font-weight: 300;
     font-size: 1rem;
     line-height: 1.8em;
 }
 
+.caption{
+    font-family: 'Inter UI', sans-serif;
+    font-style: italic;
+    
+}
 
 
 img{
@@ -163,7 +177,7 @@ img{
 
 /*04.************for top button***********/
 #myBtn {
-    font-family: 'abel';
+    font-family: 'Inter UI';
     border: none;
     background: none;
     box-shadow: none;
@@ -175,14 +189,15 @@ img{
     z-index:100;
     padding: 0;
     top: 50%;
-    right: -1.5em;
+    right: -2em;
     transform: rotate(90deg);
 /*    display: block;*/    
 }
 #myBtn:hover{
 /*    text-decoration: underline;*/
     cursor:pointer;
-    color: black;
+    color: #2b2b2b;
+    font-weight: 800;
 }
 
 /*05.media queries******************/
