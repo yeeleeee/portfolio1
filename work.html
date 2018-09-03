@@ -52,12 +52,11 @@
 .band ul li img{
     width: 150%;
     background-size: cover;
+    background: center;
 }
 
 /*interaction*/
-.band ul li:hover{
-    transition: all 0.3s; 
-}
+
 .hidden{
     margin-left:3em;
     opacity:.5;
@@ -71,8 +70,9 @@
 
 .band ul li:hover #title,
 .band ul li:hover #h4{
-    transform:translateY(.5rem);
-    transition: transform 0.3s;
+    transform:translateY(-.5rem);
+    color: #ff1111;
+    transition: all 0.3s;
 }
 
  
@@ -82,16 +82,17 @@
     font-family: "Inter UI";
     font-weight: 800;
     font-size:2rem;
+    line-height: 1.2;
     vertical-align: middle;
     color: #2b2b2b;
-    margin-top:40%;
+    margin-top:62%;
     }
 #h4{
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     font-weight: 600;
     color: #2b2b2b;
-    margin-top:33%;
+    margin-top:55%;
     }
 
 /*media    */
@@ -108,6 +109,13 @@
     }
     #title{
     margin-top:20%;
+    }
+    
+    .band ul li a>*{
+    width: 60%;
+    }
+    .band ul li img{
+    width: 150%;
     }
 }
     
@@ -165,19 +173,6 @@
    <span id="title">Cocktail Party</span>      
 </a></li>
 
-<li><a href="">
-   <img src="content/6_memory1.jpg">
-   <div>
-       Memory
-   </div>   
-</a></li>
-
-<li><a href="">
-   <img src="content/7_playground2.jpg">
-   <div>
-       Playground
-   </div>   
-</a></li>
 </ul>
 </section>
     
