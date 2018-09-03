@@ -16,6 +16,21 @@
         float: right;
         margin-top: 5em;
     }
+    #bigtext{
+    font-family: 'Inter UI', sans-serif;
+    font-size: 3.8rem;
+    font-weight: 900;
+    color: #2b2b2b;
+    margin: 15vw 15vw
+    }
+    
+@media only screen and (max-width: 600px) {
+    #bigtext{
+       font-size: 2rem; 
+    }
+}
+    
+    
 </style>
 <body>
 <nav><ul>
@@ -32,7 +47,34 @@
     </video>
 -->
     
-    <div class="about">Hey,<br> I'm Yejin.</div> 
+<section>
+<div id="bigtext"style="   
+
+    ">Hi,<br>I'm Yejin.<br>
+    My goal is to become a "unicorn" who designs the entire journey of a brand.<br><br> Coming from a background in Architecture and Cognitive Neuroscience, I am deeply interested in human behavior and interaction in a place. </div>
+</section> 
+
+
+<!-----back to the top button------------------>
+<button onclick="topFunction()" id="myBtn" title="Go to top">back to the top</button>
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() 
+    {
+        if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() 
+    {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>   
 </body>
 
 </html>
