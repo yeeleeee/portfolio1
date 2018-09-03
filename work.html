@@ -41,10 +41,24 @@
     height: calc(100vw/3);
     overflow: hidden;
     margin: 3vw;
+    background: #ff111180;
 }
 .band ul li img{
     width: 300%;
     background-size: cover;
+}
+
+.band ul li a{
+    text-decoration:none;
+    font-family: "Inter UI";
+    font-weight: 800;
+    vertical-align: middle;
+}
+.hidden{
+    display:none;
+}
+.band ul li:hover .hidden{
+    display:inline-block;
 }
 
 /**********************************/
@@ -65,7 +79,9 @@
 <section class="band x" style="padding-bottom: 50em; width: 90vw; ">
     <ul>
         <li><a href="">
-           <img src="content/0_LMD.png">
+           <div>
+            <img class="hidden" src="content/0_LMD.png"> 
+           </div>
            <div>
                Learning Media Design
            </div>   
