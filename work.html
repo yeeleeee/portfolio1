@@ -20,7 +20,9 @@
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     
     
-    
+
+
+
 <style>
 /*work - cardlist***************************************/
 .band{
@@ -31,36 +33,85 @@
     display: flex;
     flex-wrap: wrap;
 }
-.band ul li:hover{
-    transform: scale(1.025);
-    transition: transform 0.3s; 
-}
+
 .band ul li{
-    position: inline-block;
-    width: calc(100vw/3);
-    height: calc(100vw/3);
+    position: relative;
+    width: calc(100vw/2.5);
+    height: calc(100vw/2.8);
     overflow: hidden;
     margin: 3vw;
-    background: #ff111180;
+}
+.band ul li a{
+    text-decoration:none;
+}
+/*this is for placing img+text*/
+.band ul li a>*{
+    position:absolute;
+    width: 80%;
 }
 .band ul li img{
-    width: 300%;
+    width: 150%;
     background-size: cover;
 }
 
-.band ul li a{
-    text-decoration:none;
-    font-family: "Inter UI";
-    font-weight: 800;
-    vertical-align: middle;
+/*interaction*/
+.band ul li:hover{
+    transition: all 0.3s; 
 }
 .hidden{
-    display:none;
+    margin-left:3em;
+    opacity:.5;
 }
 .band ul li:hover .hidden{
-    display:inline-block;
+    opacity:1;
+    transform: scale(1.025);
+    transition:all 0.3s;
+/*    margin-left:0;*/
 }
 
+.band ul li:hover #title,
+.band ul li:hover #h4{
+    transform:translateY(.5rem);
+    transition: transform 0.3s;
+}
+
+ 
+
+/*typography*/
+#title{
+    font-family: "Inter UI";
+    font-weight: 800;
+    font-size:2rem;
+    vertical-align: middle;
+    color: #2b2b2b;
+    margin-top:40%;
+    }
+#h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2b2b2b;
+    margin-top:33%;
+    }
+
+/*media    */
+@media only screen and (max-width: 700px) {
+    .band ul li{
+    width: 80vw;
+    height: 30vh;
+    overflow: hidden;
+    margin: 3vw auto;
+    }
+    
+    #h4{
+    margin-top:13%;
+    }
+    #title{
+    margin-top:20%;
+    }
+}
+    
+    
 /**********************************/
 </style>
 
@@ -76,66 +127,58 @@
 <div class="yy"></div>
 
 <!--section1--------------------------------------->
-<section class="band x" style="padding-bottom: 50em; width: 90vw; ">
-    <ul>
-        <li><a href="">
-           <div>
-            <img class="hidden" src="content/0_LMD.png"> 
-           </div>
-           <div>
-               Learning Media Design
-           </div>   
-        </a></li>
-        
-        <li><a href="">
-           <img src="content/1_AMP.jpg">
-           <div>
-               AMP
-           </div>   
-        </a></li>
-        
-        <li><a href="">
-           <img src="content/2_OLI.png">
-           <div>
-               Open Learning Initiative
-           </div>   
-        </a></li>
-        
-        <li><a href="">
-           <img src="content/3_card.png">
-           <div>
-               Hyundai Card
-           </div>   
-        </a></li>
-        
-        <li><a href="">
-           <img src="content/4_data.png">
-           <div>
-               Cocktail Party
-           </div>   
-        </a></li>
-        
-        <li><a href="">
-           <img src="content/5_les_facades3.png">
-           <div>
-               Les Facades
-           </div>   
-        </a></li>
-        
-        <li><a href="">
-           <img src="content/6_memory1.jpg">
-           <div>
-               Memory
-           </div>   
-        </a></li>
-        
-        <li><a href="">
-           <img src="content/7_playground2.jpg">
-           <div>
-               Playground
-           </div>   
-        </a></li>
-    </ul>
+<section class="band x">
+<ul>
+<li><a href="work/1_Hcard.html">
+   <img class="hidden" src="content/3_card.png">
+  <span id="h4">#UI design</span>
+  <span id="title">Hyundai Card</span> 
+</a></li>
+
+<li><a href="work/2_OLI.html">
+   <img class="hidden" src="content/2_OLI.png">
+   <span id="h4">#UI design #User Research</span>
+   <span id="title">Open Learning Initiative</span>   
+</a></li>
+
+<li><a href="work/3_Loop.html">
+   <img class="hidden"src="content/1_AMP.jpg">
+   <span id="h4">#UX design #User Research</span>
+   <span id="title">LOOP</span>   
+</a></li>
+
+<li><a href="work/4_LMD.html">
+   <img class="hidden"src="content/0_LMD.png">
+   <span id="h4">#UX design #User Research</span>
+   <span id="title">Learning Media Design</span>      
+</a></li>
+
+<li><a href="work/5_Houyi.html">
+   <img class="hidden" src="content/4.5_Houyi.png">
+   <span id="h4">#VR #Game design</span>
+   <span id="title">Hou Yi and Ten Suns</span>     
+</a></li>
+
+<li><a href="">
+   <img class="hidden" src="content/4_data.png">
+   <span id="h4">#Data Visualization</span>
+   <span id="title">Cocktail Party</span>      
+</a></li>
+
+<li><a href="">
+   <img src="content/6_memory1.jpg">
+   <div>
+       Memory
+   </div>   
+</a></li>
+
+<li><a href="">
+   <img src="content/7_playground2.jpg">
+   <div>
+       Playground
+   </div>   
+</a></li>
+</ul>
 </section>
     
 
