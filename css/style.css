@@ -45,6 +45,9 @@ section{
 .py{
     padding-bottom: 5vw;
     padding-top: 5vw;}
+.tx{
+    padding-left: 5vw;
+    padding-right: 5vw;}
 
 .xx{
     padding-left: 10vw;
@@ -157,7 +160,7 @@ img{
 /*    font-weight:400;*/
     text-align: left;
     margin-left:2vw;
-    color: #ff1111;
+    color: #2b2b2b;
 }
 
 
@@ -252,5 +255,12 @@ img{
     background-color: #ff1111;
     transition: ease .2s;
     }
+    
+    .nav{
+        color: #2b2b2b;
+    }
+    .tx{
+    padding:0;}
+    
  
 }
