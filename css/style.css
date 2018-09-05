@@ -109,6 +109,7 @@ nav a:hover{
     font-family:"Inter UI";
     font-weight: 300;
     font-size: 1.3rem;
+    margin-bottom: 1.5em;
 }
 .h4{
     font-family: 'Open Sans', sans-serif;
@@ -149,10 +150,15 @@ nav a:hover{
 
 
 
-
-
-img{
-    width: 100%;
+video{
+    width:100%;
+}
+.imgfull{
+    width:100%;
+}
+.imghalf{
+    height: 40vh;
+    width: auto;
 }
 .footer{
     font-family: "Inter UI";
@@ -262,5 +268,8 @@ img{
     .tx{
     padding:0;}
     
+    img{
+        width:100%;
+    }
  
 }

@@ -47,10 +47,9 @@
 /*this is for placing img+text*/
 .band ul li a>*{
     position:absolute;
-    width: 80%;
 }
 .band ul li img{
-    width: 150%;
+    width: 100%;
     background-size: cover;
     background: center;
 }
@@ -75,9 +74,21 @@
     transition: all 0.3s;
 }
 
+#arrow{
+    width: 3vw;
+    margin: -14vh 13vw;    
+    }
+#houyi:hover #arrow{
+    transform: translate(8vw,20vh);
+    transition: transform .1s ease-out;
+    }
+
  
 
 /*typography*/
+#title, #h4{
+    width: 80%;
+    }
 #title{
     font-family: "Inter UI";
     font-weight: 800;
@@ -95,7 +106,7 @@
     margin-top:55%;
     }
 
-/*media    */
+/*media *********************/
 @media only screen and (max-width: 700px) {
     .band ul li{
     width: 80vw;
@@ -117,6 +128,14 @@
     .band ul li img{
     width: 150%;
     }
+    
+    #houyi:hover #arrow{
+    display:none;
+    }
+    
+    #arrow{
+    display:none;
+    }
 }
     
     
@@ -128,7 +147,7 @@
 <body>
 <!--nav-------------------------------------------->
 <nav><ul>
-        <a class="nav" href=""><li>About</li></a>
+        <a class="nav" href="about.html"><li>About</li></a>
         <a class="nav" href="work.html"><li>Work</li></a>
         <a class="nav" href=""><li>Fun</li></a>
 </ul></nav>
@@ -161,8 +180,9 @@
    <span id="title">Learning Media Design</span>      
 </a></li>
 
-<li><a href="work/5_Houyi.html">
+<li id="houyi"><a href="work/5_Houyi.html">
    <img class="hidden" src="content/4.5_Houyi.png">
+   <img src="content/4.5_arrow.png" alt="" id="arrow">
    <span id="h4">#VR #Game design</span>
    <span id="title">Hou Yi and Ten Suns</span>     
 </a></li>
@@ -170,7 +190,7 @@
 <li><a href="">
    <img class="hidden" src="content/4_data.png">
    <span id="h4">#Data Visualization</span>
-   <span id="title">Cocktail Party</span>      
+   <span id="title">Cocktail Party</span>
 </a></li>
 
 </ul>
