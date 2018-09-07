@@ -18,10 +18,9 @@ body{
 section{
     width: 100vw;
     margin: 0;
-    display: inline-block;
+    display: block;
     vertical-align: bottom;
 }
-
 
 .left{
     float:left;
@@ -102,8 +101,9 @@ nav a:hover{
 }
 .h2{
     font-family: "Inter UI";
-    font-size: 1.2rem;
-/*    font-weight: 600;*/
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2b2b2b;
 }
 .h3{
     font-family:"Inter UI";
@@ -127,7 +127,7 @@ nav a:hover{
 .p{
     font-family: 'Inter UI', sans-serif;
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.8em;
 }
 
@@ -148,11 +148,17 @@ nav a:hover{
 }
 
 
-
+/*images/dealing with depth**************/
 
 video{
     width:100%;
 }
+
+#ani{
+    width: 19.7vw;
+    position: absolute;
+    margin: 11vw 0 0 64.9vw;}
+
 .imgfull{
     width:100%;
 }
@@ -160,6 +166,19 @@ video{
     height: 40vh;
     width: auto;
 }
+
+/*use when in need of background img and another img on top*/
+/*
+.abs{
+    position:relative;
+}
+.abs>*{
+    position:absolute;
+}
+*/
+
+
+
 .footer{
     font-family: "Inter UI";
     font-size: 1rem;
@@ -244,7 +263,7 @@ video{
         width: 12vw;
         margin: auto;
         color:#f6f7f800;
-        bottom: 5em;
+        bottom: 40vh;
         transform: none;
         right: 2em;
         line-height: 1;
@@ -269,19 +288,38 @@ video{
     .tx{
     padding:0;}
     
-    img{
+    img,.imghalf{
         width:100%;
+        height:auto;
     }
  
 }
 
 
 
-@media only screen and (min-width: 1440px){
-    body{
+@media only screen and (min-width:701px) and (max-width:1600px){
+    p{
+        max-width: 70vw;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 1600px){
+    section{
         width: 1440px;
         margin-left:auto;
         margin-right: auto;
+    }
+    .px,.tx,.x{
+        margin:0;
+        padding: 0;
+    }
+    #ani{
+        width: 283.68px;
+        margin: 158.4px 0 0 934.56px;
+        
     }
 }
 
