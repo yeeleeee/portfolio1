@@ -16,7 +16,7 @@ body{
 }
 /*real estate**********************/
 section{
-    width: 100vw;
+    width: 100%;
     margin: 0;
     display: block;
     vertical-align: bottom;
@@ -150,6 +150,12 @@ nav a:hover{
 }
 
 
+.list >*{
+    margin-bottom: 0.4em;
+    list-style-type: square;
+    margin-left: 1em;
+}
+
 /*images/dealing with depth**************/
 
 video{
@@ -160,6 +166,17 @@ video{
     width: 19.7vw;
     position: absolute;
     margin: 11vw 0 0 64.9vw;}
+#aniloop{
+    width: 45vw;
+    position: absolute;
+    margin: 12.4vw 0 0 48.8vw;
+}
+#anilmd{
+    width: 45vw;
+    position:absolute;
+    margin: 10.5vw 0 0 27.7vw;
+}
+
 
 .imgfull{
     width:100%;
@@ -301,8 +318,14 @@ video{
 
 @media only screen and (min-width:701px) and (max-width:1600px){
     p{
-        max-width: 70vw;
+        width:70%;
     }
+/*
+    body{
+        width: 90%;
+        margin:auto;
+    }
+*/
 }
 
 
