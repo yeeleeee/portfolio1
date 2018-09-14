@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet"
+    href="../css/style.css" type="text/css">
+    
+    <title>Fun!/Yejin Lee</title>
+    <link rel="shortcut icon" href="../iconyej1.png">
+
+    <!--rellax interaction   -->
+    <link href="rellax.css" rel="stylesheet" type="text/css">
+    </head>
+
+<style>
+    /*    makes nav hover green*/
+    .nav{
+        color:#f6f7f820;
+    }
+    nav:hover{
+    background-color: #2b2b2b00;
+    transition:  300ms ease;
+    }
+    nav:hover .nav{
+        color: #f6f7f8;
+    }
+
+    body{
+        background: black;
+    }
+
+    .lesc{
+        width: 100vw;
+        overflow:hidden;
+        margin-top:-10vw;
+    }
+    .les{
+        height:70vmax;
+        width: auto;
+        margin-top:-10vw;
+    }
+    
+/*   white text button with white underline*/
+    .whiteline{
+    margin:auto;
+    width: 50vw;
+    border-bottom: white solid 2px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 1vw;
+    }
+    
+    section a:hover .whiteline{
+    font-style: italic;
+    }
+    
+    
+@media only screen and (max-width: 600px) {
+    #bigtext{
+       font-size: 2rem; 
+    }
+}
+
+@media only screen and (min-width:1000px){
+    .les{
+        height: 60vmax;
+    }    
+    }
+    
+</style>
+<body>
+<nav><ul>
+        <a class="nav" href="../about.html"><li>About</li></a>
+        <a class="nav" href="../work.html"><li>Work</li></a>
+        <a class="nav" href="../fun.html"><li>Fun</li></a>
+</ul></nav>
+
+    
+<section>
+<a href="fun/les.html">
+ <div class="lesc"> 
+
+    <video class="les"src="../content/les%20facades%20title.mp4" muted loop autoplay="autoplay"></video>
+</div>   
+</a>
+</section> 
+
+<section>
+<!--   <div class="yy"></div>-->
+    <div class="rellax" data-rellax-speed="2"
+      style="
+       color:white;
+       font-weight:100;
+       font-style: italic;
+       font-size: 5rem;
+       margin-top: 10vh;
+       padding-right: 10vw;
+       text-align: right;
+       z-index:80;">
+        Les <br>Façades
+    </div>
+    <div class="rellax"data-rellax-speed="3"
+      style="
+       color:white;
+       font-weight:100;
+       font-style: italic;
+       font-size: 1.5rem;
+       padding: 10vw;
+       z-index:80;">
+        Les Façades is a dance project using interactive media. I particiated as a videographer. The project is performed at American College Dance Festival.
+    </div>
+    
+</section>
+<div class="yy"></div>
+
+<section>
+      <div class="rellax" data-rellax-speed="-2" style="
+      overflow:hidden;
+      ">
+    <video src="../content/lesfacades3.mp4" muted loop autoplay="autoplay"></video>
+    </div>
+</section>
+
+<div class="yy"> </div>
+<section>
+   <div class="rellax" data-rellax-speed="2" style="
+      overflow:hidden;
+      ">
+       <video src="../content/les%20facades2.mp4" muted loop autoplay="autoplay"></video>
+   </div>
+
+</section>
+<div class="yy"></div>
+
+<section>
+    <a href="https://vimeo.com/124052177">
+    <div class="whiteline">Watch the video</div>    
+    </a>
+</section>
+
+<div class="yy"></div>
+
+
+
+
+
+<!-----back to the top button------------------>
+<button onclick="topFunction()" id="myBtn" title="Go to top">back to the top</button>
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() 
+    {
+        if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() 
+    {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    
+</script>
+
+
+<!--rellax-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.6.2/rellax.js"></script>
+<script type="text/javascript">
+	var rellax = new Rellax('.rellax',{
+        speed: 0,
+        center: true,
+        vertical: true,
+        horizontal: false
+    });
+//    rellax.destroy();
+</script> 
+  
+</body>
+
+</html>

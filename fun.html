@@ -15,13 +15,19 @@
 </head>
 <style>
     /*    makes nav hover green*/
+    .nav{
+        color:#f6f7f820;
+    }
     nav:hover{
-    background-color: #A1FD02a0;
+    background-color: #000000a0;
     transition:  300ms ease;
+    }
+    nav:hover .nav{
+        color: #f6f7f8;
     }
     
     body{
-        background: #A1FD02;
+        background: #000000;
     }
     .profile{
         float: right;
@@ -33,6 +39,19 @@
     font-weight: 900;
     color: #2b2b2b;
     margin: 15vw 15vw
+    }
+    
+    .img{
+        transform:scaleY(-1);
+    }
+    div:hover .img{
+        transform:scaleY(1);
+    }
+    
+    
+    
+    .les{
+        transform:translateY(-80%)
     }
     
 @media only screen and (max-width: 600px) {
@@ -52,10 +71,88 @@
 
     
 <section>
-<div id="bigtext"style="   ">
-    Coming Soon.
-     
-    </div>
+<!--
+<div data-aos="fade-up" style="
+   width: 40vw;
+    height: auto;
+    overflow: hidden;
+    margin-left: 20vw;
+    margin-top: 20vh;
+    filter: drop-shadow(0 0 30px #000000);">
+    <img src="content/5_les_facades3.png" alt="" class="img"
+    style="width: auto; height:40vw; ">
+</div>
+-->
+
+
+
+<a href="fun/playground.html">
+<div style="
+   width: 80vmax;
+    height: 60vh;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 30vh;
+    filter: drop-shadow(0 0 30px #000000);">
+    <img src="content/7_playground2.jpg" alt="" 
+    class="rellax"  data-rellax-speed="-2" 
+    style="width: 300%; transform:translate(-60%, -5%)">
+</div>    
+</a>
+
+<div class="py"></div>
+
+
+<a href="fun/amp.html">
+<div style="
+   width: 80vmax;
+    height: 60vh;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 30vh;
+    filter: drop-shadow(0 0 30px #000000);">
+    <img src="content/1_AMP.jpg" alt="" 
+    class="rellax"  data-rellax-speed="-2" 
+    style="width: 200%; transform:translate(-30%, -5%)">
+</div>    
+</a>
+
+<div class="py"></div>
+
+<a href="fun/les.html">
+ <div 
+   style="
+    width: 80vmax;
+    height: 20vmax;
+    overflow: hidden;
+    margin:auto;
+    margin-top: 30vh;
+    filter: drop-shadow(0 0 30px #000000);">
+    <video class="les"src="content/les%20facades%20title.mp4" muted loop autoplay="autoplay"></video>
+</div>   
+</a>
+
+<a href="fun/memory.html">
+<div data-aos="fade-up" style="
+   width: 60vw;
+    height: auto;
+    overflow: hidden;
+    margin-left: 30vw;
+    margin-top: 30vh;
+    filter: drop-shadow(0 0 30px #000000);">
+    <video src="content/inmemory_cut2.mp4" muted loop autoplay="autoplay" width="120%"></video>
+
+</div>
+</a>
+
+
+
+
+<div class="yy"></div>
+<div class="yy"></div>
+
+
+
 </section> 
 
 
@@ -78,7 +175,18 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     }
-</script>   
+</script>
+<!--rellax-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.6.2/rellax.js"></script>
+<script type="text/javascript">
+	var rellax = new Rellax('.rellax',{
+        speed: 0,
+        center: true,
+        vertical: true,
+        horizontal: false
+    });
+//    rellax.destroy();
+</script>    
 </body>
 
 </html>
