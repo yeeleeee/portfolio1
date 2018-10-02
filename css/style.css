@@ -132,7 +132,7 @@ a{
 .p{
     font-family: 'Inter UI', sans-serif;
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.8em;
 }
 
@@ -281,8 +281,8 @@ video{
         width: auto;
     }
     #myBtn{
-        height: 12vw;
-        width: 12vw;
+        height: 44px;
+        width: 44px;
         margin: auto;
         color:#f6f7f800;
         bottom: 40vh;
