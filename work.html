@@ -147,6 +147,10 @@
     #arrow{
     display:none;
     }
+    
+    #form{
+        display: none;
+    }
 }
     
 @media only screen and (min-width: 1200px) {
@@ -161,6 +165,9 @@
 
 </head>
 <body>
+
+
+
 <!--nav-------------------------------------------->
 <nav><ul>
         <a class="nav" href="about.html"><li>About</li></a>
@@ -169,6 +176,30 @@
         <a class="nav" href="resume.pdf"><li>Resume</li></a>
 </ul></nav>
 <div class="y"></div>
+
+
+ <!--feedback button-->
+<div id="form" style="
+position: sticky;
+z-index: 100;
+top: 5vh;
+margin-left: 80vw;
+">
+ <a class="typeform-share button" href="https://yelee.typeform.com/to/rilLnF" data-mode="drawer_left" style="
+
+display:inline-block;
+text-decoration:none;
+background-color:#FF1111;
+color:white;
+cursor:pointer;
+font-family:Helvetica,Arial,sans-serif;
+font-size:18px;line-height:45px;text-align:center;
+margin:0;
+height:45px;padding:0px 20px;
+
+border-radius:22px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-submit-close-delay="3" target="_blank">Feedback? </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>   
+</div>   
+
 
 <!--section1--------------------------------------->
 <section class="band x">
@@ -212,7 +243,6 @@
 
 </ul>
 </section>
-    
 
 
 
