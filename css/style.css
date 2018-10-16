@@ -114,7 +114,7 @@ a{
 .h3{
     font-family:"Inter UI";
     font-weight: 300;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 1.5em;
 }
 .h4{
@@ -276,7 +276,7 @@ video{
 }
 
 /*05.media queries******************/
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 729px) {
     .left,.right{
         float: none;
         width: auto;
@@ -320,7 +320,7 @@ video{
 
 
 
-@media only screen and (min-width:701px) and (max-width:1600px){
+@media only screen and (min-width:730px) and (max-width:1600px){
     p{
         width:70%;
     }
