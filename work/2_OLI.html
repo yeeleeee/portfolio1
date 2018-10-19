@@ -30,6 +30,29 @@
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     
 <style>
+.quote{
+/*        background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);*/
+    border-radius: 5px;
+    padding: 3vw;
+    margin: 0 2vw;
+    background-color: #eaf7ee;
+
+    }
+    
+.quote>*{
+    font-size: 1.2rem;
+    }
+.bookmark{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 1vw 5vw 0 ;
+    font-size: 1.5rem;
+    display: block;
+}
+.bookmark:hover{
+    color: #2b2b2b;
+    background-color: #eaf7ee;
+}
 
 </style>
 </head>
@@ -70,6 +93,14 @@
 <section>
     <img class="imgfull" src="../content/OLIlogo.png">     
     <div class="py"></div>
+    
+    <div class="p px">Here are two of the projects I have done.</div>
+    <div> <a href="#feedback" class="h2 px bookmark">Prototyping feedback pattern</a>
+    <a href="#sdelete" class="h2 px bookmark">Soft deleting content</a> </div>
+
+    
+    <div class="py"></div>
+    
     <div class="px p">
     I was the only designer in the development team, which gave me an opportunity to get to know the developers' work process (and jokes).  <br><br>
     
@@ -105,6 +136,54 @@
 <div class="py"></div>
 
 
+<!------------------------------------feedback pattern-->
+
+<section id="feedback">
+<div class="py"></div>
+<div class="h2 px" >Prototpying feedback pattern</div>
+<!--<div class="px p">I tested and prototyped different possibilities of feedback after a student solves a question.</div>-->
+    <div class="quote">
+    <div class="p ">
+    <span class="black">target users: </span>
+     professors, instructional designers<br>
+    <span class="black">target users' target users:</span>  students</div>
+    <div class="p "><span class="black">goal: </span> simplify the question authoring process without compromising learning principles behind it.</div>
+    </div>
+
+<div class="py"></div>
+ <img class="imghalf" src="../content/OLI_AB2.png">    
+
+<div class="py"></div>
+</section>
+
+<!--feedback 2-->
+<section>
+<div class="p px">According to learning science, feedback is a crucial part of problem-solving especially in online learning materials, since they cannot get one in person. And obviously, giving a tailored feedback based on students' answer is far more effective than just showing the right answer. However, as ideal as it sounds, it is a very long and tedious process to make a perfect question. When the format of question gets more complex, such as "select all" or "put in order," feedback choices gets exponential.</div>
+<!--<div class="py"></div>-->
+<div class="p px">
+    for a 4-choice question, the number of possible answers (=feedback) is 4; for a "select all" question, it's 16; for "ordering" question, it's 24. <br>It's too much!
+</div>
+<div class="py"></div>
+   <div class="quote">
+    <div class="p"><span class="black">pain: </span> it is very tedious to put feedback per choice, especially for "select all" questions. </div>       
+   </div>
+<div class="py"></div>
+<div class="p px">Giving a feedback was where most users dropped out because the users either 1) gave up the feedback part and just continue with question making, or 2) gave up the whole question part, which is worse. </div>
+
+<div class="py"></div>
+<div class="quote"><div class="p"><span class="black">solution:</span> we made two modes to minimize the drop out rate and give the most flexibility to the feedback process. </div></div>
+<div class="py"></div>
+<div class="p px">we first made a "simple" mode, where the professors could just put in right and wrong feedback. This is to minimize the dropout rate and to give students a feedback at least.</div>
+<div class="py"></div>
+<div class="p px">When the users toggle an "advanced" mode, they could specify the case where the students get wrong the most. We implemented the case-based solution because of the 1)cost of development, and 2) ease of users. Professors could specify the case where the students get wrong the most and give an instant feedback to the specific case.</div>
+<div class="py"></div>
+
+
+
+<!--Edge cases-->
+ <img class="imgfull" src="../content/OLI_diagram.png"> 
+
+<div class="py"></div>
 <!--AB testing video-->
 <div style="display: flex;">
 <video src="../content/OLI_AB_1-1.mp4"autoplay="autoplay" muted loop style="width:50%; height: 50%"></video>
@@ -115,8 +194,8 @@
 <video src="../content/OLI_AB_2-1.mp4"autoplay="autoplay" muted loop style="width:50%; height: 50%"></video>
 <video src="../content/OLI_AB_2-2.mp4" autoplay="autoplay"muted loop style="width:50%; height: 50%"></video> 
 </div>
-<div class="caption x">Going through an A/B testing. We needed to find the best point of compromise between development efficiency vs. learning principles.</div>
-
+<div class="caption x">Going through an A/B testing. We needed to find the best point of compromise between development efficiency vs. user experience vs. learning principles.</div>
+</section>
 <div class="py"></div>  
 
 

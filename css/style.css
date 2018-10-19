@@ -11,7 +11,7 @@
 body{
     font-family: "open sans", sans-serif;
     line-height: 1.6;
-    background: #f6f7f8;
+    background: #fbfffd50;
     margin: 0;
 }
 /*real estate**********************/
@@ -71,7 +71,7 @@ nav ul li{
     display: inline-block;
 }
 nav:hover{
-    background-color: #f6f7f8a0;
+    background-color: #fbfffddd;
     transition:  300ms ease;
 }
 nav:hover a{
@@ -94,6 +94,11 @@ a{
     text-decoration: none;
     color: #2b2b2b;
 }
+#red:hover{
+    color: #ff1111;
+    transition: .3s;
+}
+
 .h1{
     font-family: "Inter UI";
     font-size: 4rem;
@@ -160,6 +165,20 @@ a{
     margin-left: 1em;
 }
 
+
+.bookmark{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 1vw 5vw 0 ;
+    font-size: 1.5rem;
+    display: block;
+}
+.bookmark:hover{
+    color: #ff1111;
+    background-color: white;
+}
+
+
 /*images/dealing with depth**************/
 
 video{
@@ -186,9 +205,12 @@ video{
     width:100%;
 }
 .imghalf{
-    height: 40vh;
+    height: 50vh;
     width: auto;
+    margin: auto;
+    display:block;
 }
+
 
 /*use when in need of background img and another img on top*/
 /*
