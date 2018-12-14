@@ -3,14 +3,14 @@
 
 <head>
 <!--   goog analytics-->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126577277-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126577277-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'UA-126577277-1');
-</script>
+      gtag('config', 'UA-126577277-1');
+    </script>
 
 
 <!--global heading-->
@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="stylesheet" href="sample_grid.css">
+
 <!--fonts    -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' 
       rel='stylesheet' type='text/css'>
@@ -34,133 +36,7 @@
 
 
 
-<style>
-/*work - cardlist***************************************/
-.band{
-/*    background: #a1fd02;*/
-    margin: auto;
-}
-.band ul{
-    display: flex;
-    flex-wrap: wrap;
-}
 
-.band ul li{
-    position: relative;
-    width: calc(100vw/2.5);
-    height: calc(100vw/2.8);
-    overflow: hidden;
-    margin: 5vw;
-}
-.band ul li a{
-    text-decoration:none;
-}
-/*this is for placing img+text*/
-.band ul li a>*{
-    position:absolute;
-}
-.band ul li img{
-    width: 100%;
-    background-size: cover;
-    background: center;
-}
-
-/*interaction*/
-
-.hidden{
-    margin-left:3em;
-    opacity:.5;
-}
-.band ul li:hover .hidden{
-    opacity:1;
-    transform: scale(1.025);
-    transition:all 0.3s;
-/*    margin-left:0;*/
-}
-
-.band ul li:hover #title,
-.band ul li:hover #h4{
-    transform:translateY(-.5rem);
-    color: #ff1111;
-    transition: all 0.3s;
-}
-
-#arrow{
-    width: 3vw;
-    margin: -14vh 13vw;    
-    }
-#houyi:hover #arrow{
-    transform: translate(8vw,20vh);
-    transition: transform .1s ease-out;
-    }
-
- 
-
-/*typography*/
-#title, #h4{
-    width: 80%;
-    }
-#title{
-    font-family: "Inter UI";
-    font-weight: 800;
-    font-size:2rem;
-    line-height: 1.2;
-    vertical-align: middle;
-    color: #2b2b2b;
-    margin-top:62%;
-    }
-#h4{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #2b2b2b;
-    margin-top:55%;
-    }
-
-/*media *********************/
-@media only screen and (max-width: 700px) {
-    .band ul li{
-    width: 80vw;
-    height: 30vh;
-    overflow: hidden;
-    margin: 3vw auto;
-    }
-    
-    #h4{
-    margin-top:13%;
-    }
-    #title{
-    margin-top:20%;
-    }
-    
-    .band ul li a>*{
-    width: 60%;
-    }
-    .band ul li img{
-    width: 150%;
-    }
-
-    #houyi:hover #arrow{
-    display:none;
-    }
-    
-    #arrow{
-    display:none;
-    }
-    
-    #form{
-        display: none;
-    }
-}
-    
-@media only screen and (min-width: 1200px) {
-    body{
-/*        background:pink;*/
-    }
-    }
-    
-/**********************************/
-</style>
 
 
 </head>
@@ -176,8 +52,6 @@
         <a class="nav" href="resume.pdf"><li>Resume</li></a>
 </ul></nav>
 <div class="y"></div>
-
-
  <!--feedback button-->
 <div id="form" style="
 position: sticky;
@@ -202,46 +76,66 @@ border-radius:22px;max-width:100%;white-space:nowrap;overflow:hidden;text-overfl
 
 
 <!--section1--------------------------------------->
-<section class="band x">
+<section class="band">
+<div class="info"> &#60;&#60; This page works best with wider viewport &#62;&#62;</div>
 <ul>
-<li><a href="work/1_Hcard.html">
-   <img class="hidden" src="content/3_card.png">
-  <span id="h4">#UI design</span>
-  <span id="title">Search in banking app</span> 
-</a></li>
+    <li class="box one"><a href="work/1_Hcard.html">
+        <img class="asset bg" src="content/1_Oval.png">
+        <img class="asset fg" src="content/1_twophones.png">
+        <div>
+        <span id="h4">#UI design</span><br>
+        <span id="title">Search in <br>banking app</span>
+        </div>
+    </a></li>
+    
+    <li class="box two"><a href="work/3_Loop.html">
+        <img class="asset bg" id="push1" src="content/2_Oval.png">
+        <img class="asset fg" id="push2" src="content/2_laptop.png">
+        <div>
+        <span id="h4">#UX Design #User Research</span><br>
+        <span id="title">LOOP</span>
+        </div>
+    </a></li>
 
-<li><a href="work/2_OLI.html">
-   <img class="hidden" src="content/2_OLI.png">
-   <span id="h4">#UI design #User Research</span>
-   <span id="title">Open Learning Initiative</span>   
-</a></li>
 
-<li><a href="work/3_Loop.html">
-   <img class="hidden"src="content/looplogo.png">
-   <span id="h4">#UX design #User Research</span>
-   <span id="title">LOOP</span>   
-</a></li>
+    
+    <li class="box three">
+       <img id="night"src="content/3_4_Oval.png" alt="">
+         <a href="">
+        <img class="asset fg" id="push3" src="content/3_sun.png">
+        <img src="content/4.5_arrow.png" alt="" id="arrow">
+        <div id="d3">
+        <span id="h4">#VR #Game Design</span><br>
+        <span id="title">Hou Yi and<br>Ten Suns</span>   
+        </div>
+    </a></li>
+    
+    
+    
+    <li class="box four"><a href="">
+        <img class="asset fg" id="push4" src="content/4_drink.png">
+        <div class="d4">
+            <span id="h4">#Data Visualization</span><br>
+            <span id="title">Cocktail Party</span>
+        </div> 
+    </a>
 
-<li><a href="work/4_LMD.html">
-   <img class="hidden"src="content/0_LMD.png">
-   <span id="h4">#UX design #User Research</span>
-   <span id="title">Learning Media Design</span>      
-</a></li>
-
-<li id="houyi"><a href="work/5_Houyi.html">
-   <img class="hidden" src="content/4.5_Houyi.png">
-   <img src="content/4.5_arrow.png" alt="" id="arrow">
-   <span id="h4">#VR #Game design</span>
-   <span id="title">Hou Yi and Ten Suns</span>     
-</a></li>
-
-<li><a href="work/6_Cocktail.html">
-   <img class="hidden" src="content/4_data.png">
-   <span id="h4">#Data Visualization</span>
-   <span id="title">Cocktail Party</span>
-</a></li>
+    </li>
+    <li class="box five"><a href="">
+        <img class="asset fg" id="push5" src="content/5_laptop.png">
+        <div class="d5">
+            <span id="h4">#UI design #User Research</span><br>
+            <span id="title">Open Learning Initiative</span></div>
+    </a></li>
+    <li class="box six"><a href="">
+        <img class="asset fg" id="push6" src="content/6_laptop.png">
+        <div class="d6">
+            <span id="h4">#UI design #User Research</span><br>
+            <span id="title">Learning Media Design</span></div>
+    </a></li>
 
 </ul>
+
 </section>
 
 
