@@ -44,6 +44,10 @@ img{
 .one{
     margin-bottom: 5%;
 }
+
+#d1{
+    margin-top: 50%;
+}
 .two{
     margin-top: 0px;
     margin-left: 0px;
@@ -183,7 +187,7 @@ img{
         display: none;
     }
 
-    #d3{
+    #d1,#d3{
         margin-top: 0;
         color: #2b2b2b;
     }
